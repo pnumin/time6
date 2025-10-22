@@ -82,10 +82,10 @@
 ---
 
 ## 5. 비기능 요구사항 (Non-Functional Requirements)
-
+ 
 - **[P0] 기술 스택:**
     - **프론트엔드:** React, TailwindCSS, react-big-calendar
-    - **백엔드:** Python, FastAPI (권장)
+    - **백엔드:** node express
     - **데이터베이스:** SQLite
 - **[P1] 성능:**
     - 시간표 생성 프로세스는 30초 이내에 완료되어야 한다.
@@ -102,7 +102,7 @@
     - React 기반의 SPA(Single Page Application).
     - 사용자의 입력을 받아 백엔드 API를 호출하고, 응답 데이터를 캘린더 및 테이블 형태로 시각화한다.
 - **Server (Backend):**
-    - FastAPI 기반의 REST API 서버.
+    - Node.js/Express 기반의 REST API 서버.
     - 엑셀 파싱, 데이터베이스 CRUD, 시간표 생성 로직 등 핵심 비즈니스 로직을 처리한다.
 - **Database:**
     - SQLite를 사용하여 모든 데이터를 파일 기반으로 저장한다. (교과목, 교관, 일정, 휴무일 등)
